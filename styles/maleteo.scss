@@ -1,0 +1,358 @@
+@import "variables";
+@import "grid";
+@import "caja";
+@import "melopagafelix";
+    //-------------------------------------BODY--------------------------------------------------------------------------------//
+    body {
+        font-family: 'Catamaran', sans-serif;
+        font-size: $text;
+    }
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 38px;
+    }
+
+    h3 {
+        font-size: 31px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    .textLarge{
+        font-size: $textLarge;
+        line-height: $texLargeLh;
+    }
+
+    .textSmall{
+        font-size:$textSmall;
+        line-height: $texLargeLh;
+    }
+
+    @media screen and (min-width:800px) {
+        body {
+            font-size: 100%;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        body {
+            font-size: 120%;
+        }
+    }
+
+    .wrapper {
+        box-sizing: border-box;
+        max-width: 1200px;
+        margin: 0 auto; }
+
+    //-------------------------------------FIN--------------------------------------------------------------------------------//
+    //-----------------------------------Header-----------------------------------------------------------------------------//
+    /*header {
+        width: 100%;
+        margin-bottom: 2em;
+       // height: 5%;
+    }
+    */
+    .logUp {
+
+        margin-top: 2em;
+        padding:2em 0em;
+    }
+
+    //-------------------------------------FIN--------------------------------------------------------------------------------//
+    //------------------------------------------------Main-------------------------------------------------------------------------//
+    .container {
+        max-width: 100%;
+        //height: 90%;
+        margin: 0 auto;
+        //align-content: center;
+    }
+
+    //-------------------------------------FIN--------------------------------------------------------------------------------//
+    //-----------------------------------------Botones apple y google con fondo y texto------------------------------------------//
+    .slide {
+        height: 30em;
+        background: url(../Imagenes/jumbo@2x.jpg);
+        background-size: cover;
+        //background-repeat: no-repeat;
+    }
+
+    .contenido {
+        height: 100%;
+        background: $transparency2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titSl {
+        color: $white;
+        margin: 1.8em;
+        padding: 0.5em;
+
+    }
+
+    .buttonsUp {
+        margin: 3em;
+
+    }
+
+    button {
+        outline: none;
+        border: 0px;
+        padding: 0px;
+        background: none;
+    }
+
+    @media all and (min-width:1200px) {
+        .button {
+            display: block;
+            margin: 0.4em auto;
+        }
+        .contenido{
+            width: 50%;
+        }
+    }
+
+    //------------------------------------------------FIN--------------------------------------------//
+    //------------------------------------Inicio Caja de Como funciona-------------------------------//
+    .box{
+       width: 100%;
+    }
+    .caracteristicas {
+        margin-right: 2em;
+        text-align: center;
+        list-style: none;
+    }
+    .cuadro{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .prueba{
+        display: inline-block;
+    }
+    .icoLista {
+        color: $white;
+        background: linear-gradient(bottom, $primary3, $primary1);
+        border-radius: 50%;
+        width: 3em;
+        height: 3em;
+        margin: 1em, 1em;
+        display: flex;
+    }
+    .num{
+        margin: 1em 1.2em;
+        text-align: center;
+    }
+    .cuadro .texBox{
+        display:flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 2em;
+
+    }
+
+    .func {
+        text-align: center;
+        margin-top: 3em;
+        margin-bottom: 2em;
+    }
+
+    .titCuadro{
+        margin-bottom: 1em;
+    }
+
+    .lista {
+        list-style: none;
+    }
+    @media all and (min-width:1200px) {
+        .cuadro {
+        display:flex;
+        flex-direction: column;
+        }
+        .prueba{
+            justify-content: center;
+            margin:0 auto;
+            margin-bottom: 2em;
+
+        }
+
+    }
+
+    //---------------------------------FIN----------------------------------------------//
+    //-------------------------Inicio Cajon Formulario----------------------------------//
+
+
+    .tel {
+        display: block;
+        margin: auto;
+        display: none;
+    }
+
+    .tit {
+        margin: 1em 1em;
+    }
+
+    .form {
+        border: 2px solid $gray1;
+        border-radius: 1%;
+    }
+
+    label {
+        display: block;
+        margin-left:2em;
+        margin-bottom: 1em;
+    }
+
+    .cajita {
+        display: block;
+        margin-left:2em;
+        margin-bottom: 1.5em;
+        padding: 0.5em;
+        background-color: $white;
+        border: 1px solid $gray1;
+        height: 2em;
+        width: 80%;
+    }
+
+    .cities {
+        margin-left:2em;
+        background-color: $white;
+        border: 1px solid $gray1;
+        height: 3em;
+        width: 83.5%;
+    }
+    .cajaBotones{
+        display: flex;
+        flex-direction: column;
+    }
+    .bottomCheck{
+      justify-content: center;
+      margin-top:1em;
+      margin-left: 1.8em;
+      margin-right: 0.5em;
+    }
+    .check {
+        border: 7px solid $gray1;
+        cursor: pointer;
+        border-radius:5%;
+    }
+
+
+    .bottomEnviar{
+        justify-content: center;
+        margin-top:1em;
+        margin-bottom: 1em;
+        margin-left: 1.8em;
+
+    }
+
+    .enviar {
+        background: $primary2;
+        color: $white;
+        padding: 0.7em;
+        width: 6em;
+        border-radius: 2px;
+        border-style: none;
+    }
+
+    @media screen and (min-width:1200px) {
+        .orde {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .iphone{
+            width: 50%;
+            text-align: center;
+        }
+        .tel {
+
+            display: inline-block;
+        }
+    }
+
+    //---------------------------FIN--------------------------//
+    //-----------------------------------------Inicio Tercer cajon/Explicativo Opiniones de otros guardianes--------------------------------------------//
+    .box{
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+
+
+    .titOp {
+        text-align: center;
+        margin-top: 3em;
+        margin-bottom: 2em;
+    }
+
+    .uno {
+        padding: 1em;
+    }
+
+    .recuadro {
+        border: 2px solid $gray1;
+        text-align: left;
+        padding:1em;
+    }
+    .firma {
+        margin-top: 0.8em;
+    }
+
+
+    @media screen and (min-width:1200px) {
+        .boxes {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    //FIN//
+    //-----------------------------------------Inicio Opiniones de otros guardianes--------------------------------------------//
+    .titLoc {
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .map {
+        text-align: center;
+        width: 100%;
+        height: 35em;
+        margin-bottom: 4em;
+    }
+
+    //FIN//
+    //--------------------------FOOTER-------------------------//
+    footer {
+        background-color: $gray6;
+        //height: 5%;
+        width: 100%;
+    }
+
+    .logFoot {
+        text-align: center;
+
+    }
+
+    .txt {
+        color: $white;
+        text-align: center;
+    }
+
+    .cor {
+        height: 20px;
+        width: 20px;
+
+    }
+
+    //----------------------FIN-----------------------------//
+
+    /*----------------------------------------*/
+

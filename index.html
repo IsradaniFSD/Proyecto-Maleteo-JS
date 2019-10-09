@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/maleteo.css">
+  <script src="form.js"></script>
+  <script src="https://kit.fontawesome.com/934851435d.js" crossorigin="anonymous"></script>
+  <title>Maleteo</title>
+</head>
+
+<body>
+
+
+
+  <main>
+    <!--------Contenedor---------->
+    <div class=" row">
+      <div class="container col-xs-10">
+        <header>
+          <!--------Aqui el logo de la web---------->
+          <div class="logUp">
+            <img src="Imagenes/logo.svg">
+          </div>
+        </header>
+        <!--------Botones apple y google con fondo y texto---------->
+        <div class="slide">
+          <div class="contenido">
+            <div class="titSl">
+              <h1>
+                Gana dinero guardando equipaje a viajeros como tu
+              </h1>
+            </div>
+            <div class="buttonsUp">
+              <button id="app"> <img src="Imagenes/app-store.svg" alt=""></button>
+              <button id="goo"> <img src="Imagenes/google-play.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <!--------Fin botones y fondo---------->
+
+
+        <!--------Primer cajon/Explicativo ¿Como Funciona?---------->
+        <div class="cajFun">
+          <div class="func">
+            <h3>
+              ¿Cómo funciona?
+            </h3>
+          </div>
+          <div class="row around-xs">
+            <div class="col-xs-12 col-md-4">
+              <div class="box">
+                <li class="caracteristicas">
+                  <div class="cuadro">
+                    <div class="prueba">
+                      <div class="icoLista">
+                        <p class="num">1</p>
+                      </div>
+                    </div>
+                    <div class="texBox">
+                      <h3 class="titCuadro">Date de alta</h3>
+                      <p class="textLarge">Una olla de algo mas vaca que carnero, salpicon las mas
+                        noches, duelos y quebrantos los sábados.</p>
+                    </div>
+                  </div>
+                </li>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <div class="box">
+                <li class="caracteristicas">
+                  <div class="cuadro">
+                    <div class="prueba">
+                      <div class="icoLista">
+                        <p class="num">2</p>
+                      </div>
+                    </div>
+                    <div class="texBox">
+                      <h3 class="titCuadro">Publica tus espacios, horarios y tarifas</h3>
+                      <p class="textLarge">En un lugar de la Mancha de cuyo nombre no quiero
+                        acordarme, no ha mucho tiempo</p>
+                    </div>
+                  </div>
+                </li>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <div class="box">
+                <li class="caracteristicas">
+                  <div class="cuadro">
+                    <div class="prueba">
+                      <div class="icoLista">
+                        <p class="num">3</p>
+                      </div>
+                    </div>
+                    <div class="texBox">
+                      <h3 class="titCuadro">Recibe viajeros y gana dinero</h3>
+                      <p class="textLarge">No ha mucho tiempo que vivia un hidalgo de los de lanza
+                        en astillero</p>
+                    </div>
+                  </div>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--------Fin primer cajon---------->
+
+
+        <!--------Segundo cajon/Explicativo Formulario---------->
+        <div class="row around-xs">
+          <div class="col-xs-12 col-md-4">
+            <div class="boxes">
+              <div class="iphone">
+                <img class="tel" src="Imagenes/iPhoneX.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="boxes">
+              <div class="formulario" id="form">
+                <form class="form" action="#" id="myForm" method="#" name="valida-form">
+                  <div class="TitForm">
+                    <h3 class="tit">Solicita una demo</h3>
+                  </div>
+                  <div>
+                    <label for="nombre">Nombre</label>
+                    <input class="cajita" id="nombre" type="text" placeholder="Megusta Elrosa" required />
+                  </div>
+                  <div>
+                    <label for="mail">E-mail</label>
+                    <input class="cajita" id="email" type="text" placeholder=" gmail@yahoo.es" required />
+                  </div>
+                  <div>
+                    <label for="Horario">Horario preferido</label>
+                    <input class="cajita" id="horario" type="text" placeholder="disfruta@lafruta.com" required />
+                  </div>
+                  <div>
+                    <label for="Horario">Ciudad</label>
+                    <select class="cities" id="city">
+                      <option value="Madrid">Madrid</option>
+                      <option value="Barcelona">Barcelona</option>
+                      <option value="Sevilla">Sevilla</option>
+                      <option value="Bilbao">Bilbao</option>
+                      <option value="Santiago de Compostela">Santiago de Compostela</option>
+                      <option value="Valencia">Valencia</option>
+                    </select>
+                  </div>
+                  <div class="cajaBotones">
+                    <div class="bottomCheck">
+                      <input class="check" type="checkbox" required> He leido y acepto la política
+                      de privacidad</input>
+                    </div>
+                    <div>
+                      <div class="bottomEnviar">
+                        <input class="enviar" id="comando" type="submit" value="Enviar" name="submit">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div id="msg" class="mensaje-alert textLarge">
+                  <h4>¡Gracias!</h4>
+                  <p>Tu formulario ha sido enviado correctamente, pronto serás un guardián de maleteo</p>
+              </div>
+          </div>
+        </div>
+        <!--------Fin segundo cajon---------->
+
+        <!--------Tercer cajon/Explicativo Opiniones de otros guardianes---------->
+        <div class="titOp">
+          <h3>Opiniones de otros guardianes</h3>
+        </div>
+        <div class="row around-xs">
+          <div class="col-xs-12 col-md-4">
+            <div class="box ">
+              <p class="recuadro textLarge">Tras el enorme exito internacional de su primera colaboración,
+                "Bailar", que ganó un galardón en los Premios.
+              </p>
+              <p class="firma ">Sergio Garnacho</p>
+              <p class="firma textSmall">Tetuán, Madrid</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="box">
+              <p class="recuadro textLarge">Tras el enorme exito internacional de su primera colaboración,
+                "Bailar", que ganó un galardón en los Premios.
+              </p>
+              <p class="firma ">Sergio Garnacho</p>
+              <p class="firma textSmall">Tetuán, Madrid</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="box">
+              <p class="recuadro textLarge">Tras el enorme exito internacional de su primera colaboración,
+                "Bailar", que ganó un galardón en los Premios.
+              </p>
+              <p class="firma ">Sergio Garnacho</p>
+              <p class="firma textSmall">Tetuán, Madrid</p>
+            </div>
+          </div>
+        </div>
+        <!--------Fin tercer cajon---------->
+
+
+        <!--------Cuarto cajon/Explicativo Mapa---------->
+        <div class="localizacion">
+          <div class="titLoc">
+            <h3>
+              Guardianes cerca tuyo
+            </h3>
+          </div>
+          <div class="map">
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2480.113747084246!2d-3.692324991343281!3d40.45778069872907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1569665952829!5m2!1ses!2ses"
+              width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <div class="marcador">
+            <!--<img src="Imagenes/map-marker.svg" alt="">-->
+          </div>
+        </div>
+        <!--------Fin cuarto cajon---------->
+      </div>
+    </div>
+  </main>
+  <!--------Inicio Footer---------->
+  <footer>
+    <div class="cajonLargo">
+      <div class="logFoot">
+        <img src="Imagenes/logo.svg" alt="">
+      </div>
+      <div class="txt">
+        <p>Hecho con<img class="cor" src="Imagenes/—Pngtree—red heart heart outline_3782770.png" alt="">en
+          Madrid</p>
+      </div>
+    </div>
+  </footer>
+  <!--------Fin Footer---------->
+</body>
+
+</html>

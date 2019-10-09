@@ -1,0 +1,27 @@
+/*
+.formulario{
+  .msg{
+    display: none;
+  }
+
+  &.sent{
+  &.msg
+    display: block;
+  }
+  &.formulario{
+    display: none;
+  }
+}
+*/
+
+.mensaje-alert{
+  display: none;
+}
+
+.mensaje{
+  display: block;
+}
+
+.sent{
+  display: none;
+}

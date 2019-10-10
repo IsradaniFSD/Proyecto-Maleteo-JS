@@ -123,25 +123,25 @@
           <div class="col-xs-12 col-md-4">
             <div class="boxes">
               <div class="formulario" id="form">
-                <form class="form" action="#" id="myForm" method="#" name="valida-form">
+                <form class="form" action="https://httpbin.org/post" id="myForm" method="POST" name="valida-form">
                   <div class="TitForm">
                     <h3 class="tit">Solicita una demo</h3>
                   </div>
                   <div>
                     <label for="nombre">Nombre</label>
-                    <input class="cajita" id="nombre" type="text" placeholder="Megusta Elrosa" required />
+                    <input class="cajita" id="nombre" name="nombre" type="text" placeholder="Megusta Elrosa" required />
                   </div>
                   <div>
                     <label for="mail">E-mail</label>
-                    <input class="cajita" id="email" type="text" placeholder=" gmail@yahoo.es" required />
+                    <input class="cajita" id="email" name="mail" type="text" placeholder=" gmail@yahoo.es" required />
                   </div>
                   <div>
                     <label for="Horario">Horario preferido</label>
-                    <input class="cajita" id="horario" type="text" placeholder="disfruta@lafruta.com" required />
+                    <input class="cajita" id="horario" name="Horario" type="text" placeholder="disfruta@lafruta.com" required />
                   </div>
                   <div>
                     <label for="Horario">Ciudad</label>
-                    <select class="cities" id="city">
+                    <select class="cities" id="city" name="city">
                       <option value="Madrid">Madrid</option>
                       <option value="Barcelona">Barcelona</option>
                       <option value="Sevilla">Sevilla</option>
